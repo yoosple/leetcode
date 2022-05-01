@@ -3,6 +3,7 @@ public class Solution {
         Queue<int> temp = new Queue<int>();
         List<int> orverlap = arr1.Where(x => arr2.Select(y => y).Contains(x)).ToList();
         List<int> noneOrverlap = arr1.Where(x => !arr2.Select(y => y).Contains(x)).OrderBy(x => x).ToList();
+        noneOrverlap = noneOrverlap.OrderBy(x => x).ToList();
 
         for(int i = 0; i < arr2.Length; i++)
         {
