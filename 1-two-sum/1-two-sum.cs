@@ -2,7 +2,7 @@ public class Solution {
     public int[] TwoSum(int[] nums, int target) {        
         Dictionary<int,int> dic = new Dictionary<int,int>();
         
-        for(int i = 0; i < nums.Count(); i++)
+        for(int i = 0; i < nums.Length; i++)
         {
             if(dic.ContainsKey(target - nums[i]))
                 return new int[]{i, dic[target - nums[i]]};
