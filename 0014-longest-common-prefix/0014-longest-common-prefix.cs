@@ -2,7 +2,6 @@ public class Solution {
     public string LongestCommonPrefix(string[] strs) {
         if (strs == null || strs.Length == 0)
             return string.Empty;
-
         
         string result = string.Empty;
         Dictionary<string, int> dictionary = new Dictionary<string, int>();
