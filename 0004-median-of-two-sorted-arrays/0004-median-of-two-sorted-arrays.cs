@@ -1,7 +1,6 @@
 public class Solution {
     public double FindMedianSortedArrays(int[] nums1, int[] nums2) {
-        int[] merged = nums1.Concat(nums2).ToArray();
-        merged = merged.OrderBy(x => x).ToArray();
+        int[] merged = nums1.Concat(nums2).OrderBy(x => x).ToArray();
 
         if (merged.Length % 2 == 0)
         {
