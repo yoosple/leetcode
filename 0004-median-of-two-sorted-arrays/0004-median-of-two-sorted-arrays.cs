@@ -8,13 +8,14 @@ public class Solution {
             int a = merged.Length / 2;
             int b = a - 1;
             double result = ((double)merged[b] + (double)merged[a]) / 2;
+            
             return result;
         }
         else
         {
-            int a = (merged.Length - 1) / 2;
+            int i = (merged.Length - 1) / 2;
 
-            return merged[a];
+            return merged[i];
         }
     }
 }
